@@ -35,11 +35,24 @@ body {
   width: 80%;
   margin: 0 auto;
 
-  #{&}__paragraph {
+  #{&}__paragraph1 {
     font-weight: weight(bold);
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    border-bottom: 1px solid yellowgreen;
 
     &:hover {
       color: pink;
+    }
+  }
+
+  #{&}__paragraph2 {
+    @extend .main__paragraph1;
+    width: 70%;
+
+    &:hover {
+      color: gold;
     }
   }
 
